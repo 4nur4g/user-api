@@ -42,3 +42,12 @@ The application uses several packages to enhance security, such as:
 - **cors**: Enables cross-origin resource sharing (CORS) to allow requests from different origins.
 - **xss**: Sanitizes user input to prevent cross-site scripting (XSS) attacks.
 - **rateLimiter**: Limits the number of requests per IP address to prevent denial-of-service (DoS) attacks.
+
+### Configuration
+
+You will need to set up a `.env` file in the root directory of the application to store the environment variables for connecting to MongoDB database. I have added an example `.env` file as `.env.example` that you can use as a reference. You will need to provide your own values for the variables such as `PORT` and `MONGO_URI`.
+
+### Testing
+
+You can test the API using Postman, a tool for making HTTP requests. I have exported the Postman collection and added it in the root directory as `User-API.postman_collection.json`. You can import it into Postman and use it to send requests to the API endpoints. To start the API, run `yarn dev` or `npm start` or `yarn start` or any other package of your choice in your terminal. 
+
