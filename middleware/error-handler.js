@@ -6,14 +6,10 @@ const errorHandlerMiddleware = (err, req, res, next) => {
     msg: err.message || 'Something went wrong try again later',
   };
 
-  // if (err instanceof CustomAPIError) {
-  //   return res.status(err.statusCode).json({ msg: err.message })
-  // }
-
   if (err.name === 'ValidationError') {
     customError.msg = Object.values(err.errors)
       .map((item) => item.message)
-      .join(',');
+      .join(', ');
     customError.statusCode = 400;
   }
   if (err.code && err.code === 11000) {
@@ -23,7 +19,7 @@ const errorHandlerMiddleware = (err, req, res, next) => {
     customError.statusCode = 400;
   }
   if (err.name === 'CastError') {
-    customError.msg = `No item found with id : ${err.value}`;
+    customError.msg = `No user found with id : ${err.value}`;
     customError.statusCode = 404;
   }
 
