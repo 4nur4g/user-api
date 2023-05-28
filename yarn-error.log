@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\anura\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\GitHub CLI\;C:\Program Files\Calibre2\;C:\Program Files\PowerShell\7\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\anura\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\anura\.console-ninja\.bin;C:\Users\anura\AppData\Local\pnpm;C:\Users\anura\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\anura\AppData\Local\Programs\Python\Python311\;C:\Users\anura\AppData\Local\Microsoft\WindowsApps;C:\Users\anura\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\anura\AppData\Roaming\npm;C:\Program Files\JetBrains\WebStorm 2023.1\bin;C:\Users\anura\AppData\Local\GitHubDesktop\bin;C:\Users\anura\AppData\Roaming\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\anura\OneDrive\Desktop\Assignments\user-api\package.json: Unexpected token } in JSON at position 424
+      at JSON.parse (<anonymous>)
+      at C:\Users\anura\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\anura\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\anura\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "user-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Anurag Pradhan",
+    "license": "ISC",
+    "dependencies": {
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "express-async-errors": "^3.1.1",
+      "express-rate-limit": "^5.3.0",
+      "http-status-codes": "^2.1.4",
+      "mongoose": "^5.13.2",
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.9"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
