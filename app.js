@@ -9,7 +9,7 @@ app.use(express.json());
 const ConnectDB = require('./db/connect');
 const usesrRoutes = require('./routes/users');
 
-app.use('/api/v1/auth', usesrRoutes);
+app.use('/api/v1/users', usesrRoutes);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
